@@ -168,14 +168,6 @@ a:focus-visible {
   .hero h1 { font-size: 1.875rem; }
 }
 
-.lede {
-  max-width: 38em;
-  margin-top: 28px;
-  color: var(--on-deep-muted);
-  font-size: clamp(1.125rem, 1.6vw, 1.3125rem);
-  font-weight: 300;
-}
-
 .button {
   display: inline-block;
   margin-top: 40px;
@@ -251,7 +243,7 @@ a:focus-visible {
 }
 
 /* The intro under a section label (Services, How we work): a light statement, set apart from
-   the cards below it, as the lede is in the hero. */
+   the cards below it. */
 .section-body {
   max-width: 30em;
   margin-top: clamp(24px, 3vw, 32px);
