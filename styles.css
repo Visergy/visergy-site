@@ -6,6 +6,7 @@
   --text: #262626;
   --muted: #595959;
   --line: #dfe5e8;
+  --panel: #f2f6f7;
   --on-deep: #ffffff;
   --on-deep-muted: #b7c7cd;
   --wrap: 1120px;
@@ -207,9 +208,9 @@ a:focus-visible {
   margin: clamp(32px, 4vw, 48px) 0 0;
   padding: 0;
   display: grid;
-  gap: 48px clamp(32px, 4vw, 56px);
+  gap: 16px;
 }
-@media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); gap: 24px; } }
 @media (min-width: 1000px) { .cards { grid-template-columns: repeat(3, 1fr); } }
 /* Exactly two or four cards read better as columns of two than leaving a gap in a row of three. */
 @media (min-width: 1000px) {
@@ -217,9 +218,12 @@ a:focus-visible {
   .cards:has(> li:nth-child(4):last-child) { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* Each card is a pale panel with a turquoise rule, so on a phone the stack reads as separate
+   items rather than one column of text. */
 .cards li {
-  padding-top: 24px;
-  border-top: 1px solid var(--line);
+  padding: 28px 28px 32px;
+  background: var(--panel);
+  border-top: 2px solid var(--accent);
 }
 
 .group {
