@@ -87,7 +87,7 @@ a:focus-visible {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: min(100svh, 860px);
+  min-height: min(88svh, 760px);
   background-color: var(--deep);
   color: var(--on-deep);
 }
@@ -140,9 +140,11 @@ a:focus-visible {
   position: relative;
   z-index: 1;
   width: 100%;
+  /* Centred in the space under the bar, a little low of true centre. */
   margin-top: auto;
-  padding-top: clamp(96px, 16vh, 180px);
-  padding-bottom: clamp(64px, 12vh, 128px);
+  margin-bottom: auto;
+  padding-top: clamp(72px, 12vh, 128px);
+  padding-bottom: clamp(56px, 9vh, 96px);
 }
 
 .kicker {
