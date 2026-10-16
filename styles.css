@@ -226,15 +226,6 @@ a:focus-visible {
   border-top: 2px solid var(--accent);
 }
 
-.group {
-  margin-bottom: 12px;
-  color: var(--muted);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
 .cards h3 {
   color: var(--deep);
   font-size: 1.3125rem;
