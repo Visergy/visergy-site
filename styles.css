@@ -249,35 +249,12 @@ a:focus-visible {
   font-size: 1.0625rem;
 }
 
-/* About: label on the left, text on the right. */
-.about { display: grid; gap: 20px; align-items: start; }
-@media (min-width: 760px) {
-  .about { grid-template-columns: 1fr 3fr; gap: 48px; }
-  .about .label { margin-top: 0.7em; }
-}
-
-.headshot {
-  width: 100%;
-  max-width: 160px;
-  margin-top: 24px;
-  border-radius: 4px;
-}
-@media (min-width: 760px) { .headshot { max-width: 220px; } }
-
-.about-lead {
-  max-width: 30em;
-  color: var(--deep);
-  font-size: clamp(1.375rem, 2.4vw, 1.75rem);
-  font-weight: 300;
-  line-height: 1.45;
-}
-/* Credentials: one per paragraph, close together, so a wrapped one still reads as one. */
-.credential + .credential { margin-top: 6px; }
-
-.about-body {
+/* How we work: the partner terms under the label, then the entry points as cards. */
+.process-body {
   max-width: 36em;
-  margin-top: 24px;
+  margin-top: clamp(24px, 3vw, 32px);
   color: var(--muted);
+  font-size: 1.1875rem;
 }
 
 /* ---- Contact / footer ---- */
@@ -308,17 +285,18 @@ address {
   line-height: 1.8;
 }
 address .name { font-weight: 600; font-size: 1.1875rem; margin-bottom: 12px; }
-address .post-nominals {
-  display: block;
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--on-deep-muted);
-}
 
 .contact-intro {
   margin-top: 16px;
   color: var(--on-deep-muted);
   font-size: 1.1875rem;
+}
+/* The practice in one small line, under the invitation. */
+.contact-note {
+  max-width: 30em;
+  margin-top: 24px;
+  color: var(--on-deep-muted);
+  font-size: 0.9375rem;
 }
 address a {
   text-decoration: none;
